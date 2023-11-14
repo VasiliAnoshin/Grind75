@@ -1,6 +1,7 @@
 ### [Simple Solution](/LinkedList/MergeTwoSortedLists/basic_sol.py): Merge
 
 ```python
+    def mergeTwoLists(self, list1, list2):
         if not list1:
             return list2
         if not list2:
