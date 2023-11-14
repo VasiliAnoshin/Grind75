@@ -20,4 +20,4 @@
         return res.next
 ```
 
-Time Complexity: ![O(m+n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n)>), Space Complexity: ![O(1)](<https://latex.codecogs.com/svg.image?\inline&space;O(1)>)
+Time Complexity: ![O(m+n)](<https://latex.codecogs.com/svg.image?\inline&space;O(m+n)>), Space Complexity: ![O(1)](<https://latex.codecogs.com/svg.image?\inline&space;O(1)>)
