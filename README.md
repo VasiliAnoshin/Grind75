@@ -7,6 +7,7 @@
 - how VPN work: https://medium.com/@hnasr/how-vpns-really-work-a5da843d0eb3
 - https://levelup.gitconnected.com/dont-just-leetcode-follow-the-coding-patterns-instead-4beb6a197fdb
 - https://sukanyabag.medium.com/my-experience-interviewing-with-google-cd41f120f0fd
+- https://betterprogramming.pub/study-plan-to-land-senior-software-engineer-positions-at-meta-google-and-more-cd5362dda84
 
 # Cources:
 https://www.coursera.org/specializations/algorithms#courses
