@@ -14,4 +14,4 @@
 
 Time Complexity: ![O(log_n)](<https://latex.codecogs.com/svg.image?\inline&space;O(log_n)>), Space Complexity: ![O(1)](<https://latex.codecogs.com/svg.image?\inline&space;O(1)>)
 
-Explanation:Create two pointers i and j. And move them correspondently depending on bs algorithm. (<https://latex.codecogs.com/svg.image?\inline&space;O(log(n))>) time.
+Explanation:Create two pointers i and j. And move them correspondently depending on bs algorithm.
