@@ -33,7 +33,7 @@
         return "".join(res[::-1])
 ```
 
-Time Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(log_n)>), Space Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(1)>)
+Time Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n)>), Space Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n)>)
 
 Explanation: This algorithm is designed to add two binary strings and return the result as a binary string. It follows the principles of binary addition, where you start from the least significant bit (LSB) and move towards the most significant bit (MSB), carrying over when the sum exceeds 1
 - ##### Perform Binary Addition: </br>
