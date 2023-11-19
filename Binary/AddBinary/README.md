@@ -1,4 +1,4 @@
-### [Basic Solution](/Binary/AddBinary/basic_sol.py): Binary Search
+### [Basic Solution](/Binary/AddBinary/basic_sol.py):
 
 ```python
     def addBinary(self, a: str, b: str) -> str:
@@ -16,7 +16,7 @@
         return "".join([str(num) for num in res[::-1]])
 ```
 
-### [Improved Solution](/Binary/AddBinary/basic_sol.py): Binary Search
+### [Improved Solution](/Binary/AddBinary/basic_sol.py):
 
 ```python
     def addBinary(self, a: str, b: str) -> str:
