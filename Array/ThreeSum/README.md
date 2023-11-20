@@ -23,11 +23,27 @@
                 else:
                     res.append([nums[i], nums[l], nums[r]])
                     l+=1
-                    while nums[l] == nums[l-1] and l<r:
-                        l+=1
+                    while nums[l] == nums[l-1] and l<r:       #After sum was added add case for elimante duplicates. 
+                        l+=1 
             i+=1
         return res
 ```
 
-Time Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n)>), Space Complexity: ![O(1)](<https://latex.codecogs.com/svg.image?\inline&space;O(1)>)
-Explanation: The idea behind this algorithm is to track the minimum price encountered so far (global_min) and calculate the profit that can be obtained by selling at the current price (prices[i]) minus the minimum price. The maximum profit is updated whenever a higher profit is found during the iteration.
+Time Complexity: ![O(n^2)](<https://latex.codecogs.com/svg.image?\inline&space;O(n^2)>), Space Complexity: ![O(1)](<https://latex.codecogs.com/svg.image?\inline&space;O(1)>)
+Explanation: The idea behind this algorithm is to find triplets and prevent from duplicates. 
+lets take [-3, 3, 4, -3, 1, 2]
+in this sequence exist | -3, 1, 2 | twice that lead to 0. 
+3 + 1 + 2 =0  take a look [-3, 3, 4, -3, 1, 2]
+                            ^         ^  ^  ^
+the problem that we do no need the same number in  3 + 1 + 2 =0 this position twice.
+                                                   ^
+The solution to this problem is to sort inpout Array. Now we are looking at sorted array: [-3, -3, 1, 2, 3, 4]
+So now if we find this [-3, -3, 1, 2, 3, 4] three numbers. And then we have negative -3 again [-3, -3, 1, 2, 3, 4] that was already in this position. 
+                         ^      ^  ^                                                                ^  ^  ^
+And we know this because its left value is the same number we dont want to put twice here => lead to duplicates. 
+So after we find our first number. The we need to complete the remain two. And its lead us to 2sum problem based on two pointers where array is sorted.
+And if we find two numbers that lead to sol we add to array. Else we shift pointers based on result. If sum > 0 then shift left right pointer. 
+if sum < 0 shift right left pointer. 
+
+There could be duplicates among the right and left values. For Example [-3, -3, -1, -1, 2, 3, 4]. For the next round you will see again [-3, -3, -1, -1, 2, 3, 4] That lead to 0. 
+                                                                         ^       ^            ^                                           ^           ^        ^
