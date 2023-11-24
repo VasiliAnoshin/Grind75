@@ -15,3 +15,5 @@ https://www.coursera.org/specializations/algorithms#courses
 
 # DataEngineer - dont know why do i need it:
 - 50 most asked questions: https://medium.com/towards-data-engineering/50-most-asked-data-engineer-interview-questions-and-answers-in-2023-2b29d933adf8
+# DataStructure
+heap: https://www.youtube.com/watch?v=HqPJF2L5h9U&ab_channel=AbdulBari
