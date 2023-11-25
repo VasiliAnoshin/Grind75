@@ -29,3 +29,4 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
     sol = sol.shortSolution("1010", "1011")
+    print(sol)
