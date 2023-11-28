@@ -1,10 +1,13 @@
-### [Simple Solution](/Array/ProductOfArray/basic_sol.py): 
+
+### [Simple Solution](/Array/ProductOfArray/basic_sol.py): Prefix Product & Suffix Product
+Problem: [here](https://leetcode.com/problems/product-of-array-except-self)!
 
 ```python
-    def productExceptSelf(self, nums):
+    def productExceptSelf(self, nums): 
         prefix = [0] * len(nums)
         postfix = [0] * len(nums)
-        output = [1] * len(nums)
+        #final output is 
+        output = [1] * len(nums) 
         #calculate prefix
         for i in range(len(nums)):
             prefix[i] = nums[i] if i == 0 else nums[i] * prefix[i-1]
