@@ -13,7 +13,7 @@ You can iterate in result array and for current index divide it by value like th
             output[j] = prefix//nums[j]
         return output
 ```
-But you can use division.
+But you can't use division.
 
 ```python
     def productExceptSelf(self, nums): 
@@ -40,6 +40,8 @@ But you can use division.
 
 Time Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n)>), Space Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n)>)
 Algorithm: Suppose our prefix: started [a,b,c,d] => [a, ab, abc, abcd]. Postfix: [d,c,b,a] => [abcd,abc,ab,a].
+##### Calculate Final Output:
+For each element at index i, multiply the corresponding values from the prefix and postfix arrays to get the product of all elements except the one at index i.
 
 
 
