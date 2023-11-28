@@ -69,3 +69,18 @@ For each element at index i, multiply the corresponding values from the prefix a
 - Iterate through the array from right to left.
 - For each element at index i, multiply the current value in res by the product of all elements to the right of i.
 - Update a variable postfix to represent the product of all elements to the right of the current index.
+
+## Example:
+Let's consider the input array nums = [1, 2, 3, 4].
+1. Calculate Prefix Products:
+- At index 0: res[0] = 1, prefix = 1
+- At index 1: res[1] = prefix * nums[0] = 1 * 1 = 1, prefix *= nums[0] = 1 * 1 = 1
+- At index 2: res[2] = prefix * nums[1] = 1 * 2 = 2, prefix *= nums[1] = 1 * 2 = 2
+- At index 3: res[3] = prefix * nums[2] = 2 * 3 = 6, prefix *= nums[2] = 2 * 3 = 6
+2. Calculate Postfix Products:
+- At index 3: res[3] *= postfix = 6 * 1 = 6, postfix *= nums[3] = 1 * 4 = 4
+- At index 2: res[2] *= postfix = 2 * 4 = 8, postfix *= nums[2] = 4 * 3 = 12
+- At index 1: res[1] *= postfix = 1 * 12 = 12, postfix *= nums[1] = 12 * 2 = 24
+- At index 0: res[0] *= postfix = 1 * 24 = 24, postfix *= nums[0] = 24 * 1 = 24
+3. Return the Result:
+- The final res array is [24, 12, 8, 6], which represents the product of all elements except the one at the current index.
