@@ -58,14 +58,14 @@ For each element at index i, multiply the corresponding values from the prefix a
         return res
 ```
 ## Initialization:
-    - res: The res array is initialized as an array of ones, representing the initial product. It will eventually store the product of all elements except the one at the current index.
+- res: The res array is initialized as an array of ones, representing the initial product. It will eventually store the product of all elements except the one at the current index.
 
 ## Calculate Prefix Products:
-    - Iterate through the array from left to right.
-    - For each element at index i, set the corresponding element in res to the product of all elements to the left of i.
-    - Update a variable prefix to represent the product of all elements to the left of the current index.
+- Iterate through the array from left to right.
+- For each element at index i, set the corresponding element in res to the product of all elements to the left of i.
+- Update a variable prefix to represent the product of all elements to the left of the current index.
 
 ## Calculate Postfix Products:
-    - Iterate through the array from right to left.
-    - For each element at index i, multiply the current value in res by the product of all elements to the right of i.
-    - Update a variable postfix to represent the product of all elements to the right of the current index.
+- Iterate through the array from right to left.
+- For each element at index i, multiply the current value in res by the product of all elements to the right of i.
+- Update a variable postfix to represent the product of all elements to the right of the current index.
