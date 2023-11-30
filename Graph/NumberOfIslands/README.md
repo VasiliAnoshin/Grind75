@@ -32,8 +32,8 @@ class Solution:
         return num_islands
 ```
 
-Time Complexity: ![O(N)](<https://latex.codecogs.com/svg.image?\inline&space;O(N)>), 
-Space Complexity: ![O(N)](<https://latex.codecogs.com/svg.image?\inline&space;O(N)>)
+Time Complexity: ![O(N*M)](<https://latex.codecogs.com/svg.image?\inline&space;O(N*M)>), 
+Space Complexity: ![O(N*M)](<https://latex.codecogs.com/svg.image?\inline&space;O(N*M)>)
 
 
 ### [Recursive Solution](/Graph/NumberOfIslands/recursive_sol.py):
