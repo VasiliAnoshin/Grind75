@@ -37,5 +37,27 @@ Space Complexity: ![O(N*M)](<https://latex.codecogs.com/svg.image?\inline&space;
 
 
 ### [Recursive Solution](/Graph/NumberOfIslands/recursive_sol.py):
+``` python
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        rows, cols, number_of_islands = len(grid), len(grid[0]), 0 
+        def dfs(row, column) -> None:
+            exceed_boundaries = row not in range(rows) or column not in range(cols)
+            if exceed_boundaries or grid[row][column] == "0":
+                return
 
+            grid[row][column] = "0"
+            dfs(row-1, column)
+            dfs(row+1, column)
+            dfs(row, column-1)
+            dfs(row, column+1)
 
+        for i in range(rows):
+            for j in range(cols):
+                if grid[i][j] == "1":
+                    dfs(i, j)
+                    number_of_islands += 1
+
+        return number_of_islands
+```
+Explanation: Everytime we find a land ("1"), we perform DFS (depth-first search) to find all of the land in this island and change it to water ("0") so that we will not count it again in further iterations. After DFS, we have fully explored this particular island. Notice that it is feasible to change it to another character whatever you like except "1".
