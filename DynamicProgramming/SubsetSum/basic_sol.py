@@ -15,4 +15,4 @@ class Solution:
 
 if __name__ == '__main__':
     sol = Solution()
-    sol.canPartition([1,5,11,5])
+    sol.canPartition([1, 2, 3, 4])
