@@ -1,4 +1,4 @@
-### [Basic Solution](/BinarySearch/SubsetSum/basic_sol.py): DP
+### [Basic Solution](/DynamicProgramming/SubsetSum/basic_sol.py): DP
 
 ```python
     def canPartition(self, nums) -> bool:
@@ -16,6 +16,6 @@
         return True if target in dp else False 
 ```
 
-Time Complexity: ![O(sum(nums))](<https://latex.codecogs.com/svg.image?\inline&space;O(sum(nums))>), Space Complexity: ![O(sum(nums)](<https://latex.codecogs.com/svg.image?\inline&space;O(sum(nums)>)
+Time Complexity: ![O(sum(nums))](<https://latex.codecogs.com/svg.image?\inline&space;O(sum(nums))>), Space Complexity: ![O(sum(nums))](<https://latex.codecogs.com/svg.image?\inline&space;O(sum(nums)>)
 
 Explanation:
