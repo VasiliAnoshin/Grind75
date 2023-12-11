@@ -1,4 +1,4 @@
-### [Basic Solution](/DynamicProgramming/SubsetSum/basic_sol.py): DP
+### [Basic Solution](/DynamicProgramming/SubsetSum/basic_sol.py):: DP
 
 ```python
     def canPartition(self, nums) -> bool:
