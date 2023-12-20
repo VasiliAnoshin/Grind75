@@ -21,5 +21,7 @@ Time Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n
 
 - Init 2 new vars. One for output and one for deque. 
 - Algorithm: Traverse the whole tree starting from the right side => check if current level in seen.
-- If level in seen that mean righmost value was inserted. But we still need to check entire tree. 
+- If level in seen that mean righmost value was inserted. But we still need to check entire tree. Because for
+rightmost node can exist left child.
 - If level not in seen we need to append value of root to deque and add level to seen.
+- if right node not exist we continue with the left node.
