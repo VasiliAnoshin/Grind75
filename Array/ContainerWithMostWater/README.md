@@ -29,6 +29,7 @@ Time Complexity: ![O(n^2)](<https://latex.codecogs.com/svg.image?\inline&space;O
         return water
 ```
 
+### [Basic Solution](/DynamicProgramming/ContainerWithMostWater/sol.py): Two pointers
 Time Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n))>), Space Complexity: ![O(1)](<https://latex.codecogs.com/svg.image?\inline&space;O(1)>)
 - Explanation: <br/>
 I've seen some "proofs" for the common O(n) solution, but I found them very confusing and lacking. Some even didn't explain anything but just used lots of variables and equations and were like "Tada! See?". I think mine makes more sense:
