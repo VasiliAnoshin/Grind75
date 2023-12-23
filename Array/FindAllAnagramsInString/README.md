@@ -46,7 +46,8 @@ another version using two arrays:
         """
 	To find the anagram of a string, the frquencies of each char of string should match to the resulting string.
 	**Approach: Sliding Window**
-	Define two arrays, used as hashmap, to store the frequencies of alphabets(a-z) of given string **s** and the chars present in window at any point of time.
+		Define two arrays, used as hashmap, to store the frequencies of alphabets(a-z) of given string **s**
+		and the chars present in window at any point of time.
 	"""
         hashmapS = [0] * 26
         hashmapP = [0] * 26
@@ -64,10 +65,10 @@ another version using two arrays:
         output = []
         
         while right < lenS:
-	# Whenever the window string becomes anagram of **s**, append the left index of window to output.
+            # Whenever the window string becomes anagram of **s**, append the left index of window to output.
             if hashmapP == hashmapS:
                 output.append(left)
-	# Slide the window by 1 position and check for anagram again.
+	    # Slide the window by 1 position and check for anagram again.
             hashmapS[ord(s[left]) - ord('a')] -= 1
             left += 1
             right += 1
