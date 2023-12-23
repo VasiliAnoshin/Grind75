@@ -1,6 +1,6 @@
 # Grind75
 75 popular questions from interview
-https://pythontutor.com/python-compiler.html#mode=edit
+- python compiler: https://pythontutor.com/python-compiler.html#mode=edit
 
 # Resources explored during interview prep:
 - https://flexsub.shop/how-i-got-in-to-amazon-microsoft-google-from/ 
