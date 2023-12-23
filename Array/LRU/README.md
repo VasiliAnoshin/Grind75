@@ -59,3 +59,11 @@ class LRUCache:
 
 Time Complexity: ![O(1)](<https://latex.codecogs.com/svg.image?\inline&space;O(1)>), 
 Space Complexity: ![O(n)](<https://latex.codecogs.com/svg.image?\inline&space;O(n)>)
+
+Solution:
+Using dobule LinkedList + dictionary aka cache that remember for each key pointer to Node in Double LinkedList.
+Using additional structure Entry aka double linkedlist consisting from key,value, left and right pointer.
+
+initializing LRU include initialization of left and right nodes that uses as left and right borders.
+left symbolize LRU and right symbolize MRU. Each time we remove elm from LL we use left node (change pointer). 
+Each time we insert new element we use right node. 
