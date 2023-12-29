@@ -23,3 +23,5 @@
             return res
         return dfs(0, d, -1)
 ```
+
+Time Complexity: ![O(2^d)](<https://latex.codecogs.com/svg.image?\inline&space;O(2^d))>), Space Complexity: ![O(len(jobDifficulty))](<https://latex.codecogs.com/svg.image?\inline&space;O(len(jobDifficulty))>)
