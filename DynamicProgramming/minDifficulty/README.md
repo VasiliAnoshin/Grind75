@@ -29,4 +29,8 @@ Problem: [here](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedu
 Time Complexity: ![O(2^d)](<https://latex.codecogs.com/svg.image?\inline&space;O(2^d))>), Space Complexity: ![O(len(jobDifficulty))](<https://latex.codecogs.com/svg.image?\inline&space;O(len(jobDifficulty))>)
 
 Explanation:
-1) check for 
+1) The only one reason to complete recursion step is the case when number of days = 0 and you stay at the end of the job list.
+in any other case return float('inf').
+2) looking for cur_max at each recursion step because each day has its max. 
+3) Decide what is the best solution - continue the current day or split cur day and start new one. Take min between them.
+
