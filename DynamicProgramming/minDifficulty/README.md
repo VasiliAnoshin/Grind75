@@ -1,4 +1,6 @@
 ### [Basic Solution](/DynamicProgramming/minDifficulty/sol.py): DP
+Problem: [here](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/)!
+
 
 ```python
     def minDifficulty(self, jobDifficulty: list[int], d: int) -> int:
@@ -25,3 +27,6 @@
 ```
 
 Time Complexity: ![O(2^d)](<https://latex.codecogs.com/svg.image?\inline&space;O(2^d))>), Space Complexity: ![O(len(jobDifficulty))](<https://latex.codecogs.com/svg.image?\inline&space;O(len(jobDifficulty))>)
+
+Explanation:
+1) check for 
