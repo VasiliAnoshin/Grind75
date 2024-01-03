@@ -37,9 +37,9 @@ def findMinHeightTrees(self, n: int, edges):
 
 Explanation: For each node in the tree we trying to find the height. Result saving in Dict. 
 At the end loioking for the nodes with min_height
-Time Complexity: ![O(n^2)](<https://latex.codecogs.com/svg.image?\inline&space;O(n)>), Space Complexity: ![O(n^2)](<https://latex.codecogs.com/svg.image?\inline&space;O(n^2)>)
+Time Complexity: ![O(n^2)](<https://latex.codecogs.com/svg.image?\inline&space;O(n^2)>), Space Complexity: ![O(n^2)](<https://latex.codecogs.com/svg.image?\inline&space;O(n^2)>)
 
-### [Basic Solution](/BinaryTree/FindMinHeightTree/sol.py): Top.sort
+### [Smart Solution](/BinaryTree/FindMinHeightTree/sol.py): Top.sort
 ```python
     def findMinHeightTrees(self, n: int, edges):
         if n == 1:
