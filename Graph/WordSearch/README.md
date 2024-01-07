@@ -34,4 +34,7 @@ def exist(self, board: list[list[str]], word: str) -> bool:
 ```
 
 Time Complexity: ![O(4^n^2)](<https://latex.codecogs.com/svg.image?\inline&space;O(4^n^2)>), 
-Explanation: 
+Explanation: loop for all chars in matrix and ru DFS that check if there exist at least one path that lead to to provided path. 
+This is not optimal solution since it path over all existing chars and trying to look in all directions.
+In each step: we remove the same char and put '/' insted. To understand that we were here before. 
+
