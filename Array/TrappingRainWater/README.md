@@ -13,7 +13,7 @@
         ans = 0
         for i in range(n):
             waterLevel = min(maxLeft[i], maxRight[i])
-            if waterLevel >= height[i]:
+            if waterLevel > height[i]: #take the buffer with water > 0
                 ans += waterLevel - height[i]
         return ans
 ```
