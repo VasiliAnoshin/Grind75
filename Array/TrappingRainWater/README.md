@@ -1,4 +1,5 @@
 ### [Simple Solution](/Array/TrappingRainWater/basic_sol.py): Extra space
+neet_code_sol = https://www.youtube.com/watch?v=ZI2z5pq0TqA&ab_channel=NeetCode
 
 ```python
     def trap(self, height: List[int]) -> int:
